@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thank you — BEACON</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300..700,0..1&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand" style="text-decoration:none;">
+      <span class="mark">
+        <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 2L23 22H3L13 2Z" stroke="#E8A94C" stroke-width="1.4" stroke-linejoin="round"/>
+          <path d="M13 2V22" stroke="#E8A94C" stroke-width="1" stroke-opacity="0.5"/>
+          <circle cx="13" cy="7.5" r="1.6" fill="#E8A94C"/>
+        </svg>
+      </span>
+      BEACON
+    </a>
+    <div class="navlinks" id="navlinks">
+      <a href="index.html#capabilities">Capabilities</a>
+      <a href="insights.html">Insights</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#startups">For Startups &amp; Investors</a>
+      <a href="index.html#contact" class="cta">Book a conversation</a>
+    </div>
+    <button class="navtoggle" id="navtoggle" aria-label="Open menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F6F2E9" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </nav>
+</header>
+
+<section class="ty-hero">
+  <div class="wrap">
+    <div class="eyebrow" style="--eb:var(--beacon-soft); justify-content:center;">Message sent</div>
+    <h1>Thanks — that's landed with me directly.</h1>
+    <p>I read every message myself and reply personally, usually within one business day. If it's urgent, email hello@beaconhc.com directly.</p>
+    <a href="index.html" class="btn btn-primary">Back to the homepage</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <span class="mark">
+            <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 2L23 22H3L13 2Z" stroke="#E8A94C" stroke-width="1.4" stroke-linejoin="round"/>
+              <circle cx="13" cy="7.5" r="1.6" fill="#E8A94C"/>
+            </svg>
+          </span>
+          BEACON
+        </div>
+        <div class="foot-tag" style="margin-top:6px;">IN THE BUSINESS OF BETTER DECISIONS</div>
+      </div>
+      <div class="foot-links">
+        <a href="index.html#capabilities">Capabilities</a>
+        <a href="insights.html">Insights</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Beacon Human Capital Consulting. Bengaluru, India.</span>
+      <span>hello@beaconhc.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navtoggle = document.getElementById('navtoggle');
+  const navlinks = document.getElementById('navlinks');
+  navtoggle.addEventListener('click', () => {
+    const isOpen = navlinks.classList.toggle('open');
+    navtoggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+</script>
+</body>
+</html>
